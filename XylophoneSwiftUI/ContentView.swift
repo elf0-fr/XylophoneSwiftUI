@@ -63,12 +63,8 @@ struct MusicalNote: View {
     let note: String
     let color: Color
     
-    @State private var player: AVAudioPlayer!
-    
     var body: some View {
-        Button {
-            playSound()
-        } label: {
+        Button(intent: NoteIntent(note: note)) {
             Rectangle().fill(color)
                 .overlay{
                     Text(note)
@@ -79,15 +75,5 @@ struct MusicalNote: View {
                 }
         }
         .buttonStyle(.plain)
-    }
-    
-    func playSound() {
-        let url = Bundle.main.url(forResource: note, withExtension: "wav")
-        do {
-            player = try AVAudioPlayer(contentsOf: url!)
-            player.play()
-        } catch let error {
-            print("error when playing sound: \(error)")
-        }
     }
 }
