@@ -1,14 +1,14 @@
 # XylophoneSwiftUI
 
-This project is a modern reimagining of the sample code from “The Complete iOS Development Bootcamp”, rebuilt entirely using **SwiftUI**.
+This project is a modern reimagining of the [sample code](https://github.com/appbrewery/Xylophone-iOS13) from “The Complete iOS Development Bootcamp”, rebuilt entirely using **SwiftUI**.
 But this is more than a UIKit-to-SwiftUI migration — it also includes an interactive **WidgetKit extension** and **AppIntents** integration to support Siri and the Shortcuts app.
 
 ## What’s New Compared to the Original?
 
-  •	Fully rewritten using **SwiftUI**, leveraging modern, declarative UI design.
-	•	Integrated interactive widget with **WidgetKit**, allowing quick user interactions directly from the home screen.
-  •	**AppIntent** integration to trigger actions via Siri voice commands or the Shortcuts app.
-	•	Updated to support the latest versions of iOS (18) and Xcode (16).
+- Fully rewritten using **SwiftUI**, leveraging modern, declarative UI design.
+- Integrated interactive widget with **WidgetKit**, allowing quick user interactions directly from the home screen.
+- **AppIntent** integration to trigger actions via Siri voice commands or the Shortcuts app.
+- Updated to support the latest versions of iOS (18) and Xcode (16).
 
 ## SwiftUI
 
